@@ -43,5 +43,5 @@ function solve(filename)
     extract_max_path_value(matrix)
 end
 
-const p18_filename = "project_euler\\src\\p18\\triangle.txt"
-solve(p18_filename)
+const p67_filename = "p67.txt"
+println(solve(p67_filename))

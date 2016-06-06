@@ -25,4 +25,4 @@ function longest_collatz(n)
 end
 
 # takes roughly half a second... it's possible to make it faster using hash tables
-longest_collatz(10^6)
+println(longest_collatz(10^6))

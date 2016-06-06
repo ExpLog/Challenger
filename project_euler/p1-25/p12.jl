@@ -29,7 +29,7 @@ function first_triangular_500_divisors_primes()
     while true
         n += i
         i += 1
-        tau = [v+1 for k, v in values(factor(n))]
+        tau = [v+1 for v in values(factor(n))]
         if prod(tau) >= 500
             return n
         end
@@ -37,5 +37,5 @@ function first_triangular_500_divisors_primes()
 end
 
 
-@time first_triangular_500_divisors()
-@time first_triangular_500_divisors_primes()
+println(first_triangular_500_divisors())
+println(first_triangular_500_divisors_primes())

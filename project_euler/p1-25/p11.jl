@@ -49,5 +49,5 @@ function max_consecutive_prod(grid, n)
     max_prod
 end
 
-const grid = read_matrix("project_euler\\src\\p11\\grid.txt")
-max_consecutive_prod(grid, 4)
+const grid = read_matrix("p11.txt")
+println(max_consecutive_prod(grid, 4))

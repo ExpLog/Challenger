@@ -2,9 +2,9 @@
 Outputs the first n numbers starting from 1.
 """
 function num_american_names(n)
-    file = open("project_euler\\src\\p17\\a000027.txt")
+    file = open("p17.txt")
     readline(file)
-    names = Vector{String}(n)
+    names = Vector{AbstractString}(n)
     for i in 1:n
         str = split(readline(file))[2]
         str = chomp(str)
@@ -26,4 +26,4 @@ function num_brittish_name_sum(n)
 end
 
 # this is cheating, but building the names of the numbers is really, really boring
-num_brittish_name_sum(1000)
+println(num_brittish_name_sum(1000))

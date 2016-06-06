@@ -9,4 +9,4 @@ function first_n_digits(filename, n::Int)
     string(x)[1:n]
 end
 
-first_n_digits("project_euler\\p13\\input.txt", 10)
+print(first_n_digits("p13.txt", 10))
